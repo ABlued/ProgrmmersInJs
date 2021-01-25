@@ -15,3 +15,5 @@ function solution() {
     return answer;
 }
 solution();
+
+// https://programmers.co.kr/learn/courses/30/lessons/12899?language=javascript
