@@ -29,7 +29,7 @@ function solution(dartResult) {
                         i++;
                         aryIndex++;
                     }
-                    else{
+                    else{                               //1인 경우
                         ary.push(1);
                         aryIndex++;
                     }
