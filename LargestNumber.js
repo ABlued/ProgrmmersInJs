@@ -9,3 +9,5 @@ function solution(numbers) {
 
 
 console.log(solution(numbers));
+
+//https://programmers.co.kr/learn/courses/30/lessons/42746?language=javascript
