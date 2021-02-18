@@ -1,4 +1,4 @@
-const numbers = "91254";
+const numbers = "94";
 let isPrime = [false,false];
 function solution(numbers) {
     const max = Math.pow(10, numbers.length);
@@ -8,9 +8,7 @@ function solution(numbers) {
     let sol = [];
     for(let i = aryNumbers.length; i > 0 ; i--){
         result = permutation(aryNumbers,i);
-        // console.log(result);
         for(let j = 0; j < result.length; j++){
-            // console.log(parseInt(result[j].join('')));
             const key = parseInt(result[j].join(''));
             if(isPrime[key] == true){
                 const isHad = sol.some((value) => value == key);        //이미 배열에 있는거면 무시한다.
@@ -20,7 +18,6 @@ function solution(numbers) {
             }
         }
     }
-    // console.log(sol);
     return sol.length;
 }
 
@@ -50,6 +47,7 @@ function permutation(arr, selectNum) {      //배열 조합 만들어내는 로�
       const combineFixer = permuationArr.map((v) => [fixer, ...v]);
       result.push(...combineFixer);
     });
+    console.log(result);
     return result;
   }
 console.log(solution(numbers));
